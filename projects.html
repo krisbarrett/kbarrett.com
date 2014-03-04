@@ -1,0 +1,12 @@
+---
+layout: default
+title: Kris Barrett's Blog
+---
+<h2>Projects</h2>
+<h3>Coming soon!</h2>
+{% for project in site.projects %}
+	<div class="project">
+		<h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+		<p class="text-muted">{{project.date | date_to_string}}</p>
+	</div>
+{% endfor %}

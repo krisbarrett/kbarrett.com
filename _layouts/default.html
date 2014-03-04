@@ -6,11 +6,25 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="/js/main.js"></script>
+
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
+
+        <!-- font awesome -->
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
 
 				<!-- Google Analytics -->
 				<script>
@@ -21,38 +35,39 @@
 
 				  ga('create', 'UA-40910779-1', 'kbarrett.com');
 				  ga('send', 'pageview');
-
 				</script>
-
     </head>
     <body>
-
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
-     
-                {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Kris Barrett<br />
-                  Computer Engineer<br />
-                  krisbarrett@gmail.com
-                </p>
+        <div class="row">
+          <div class="container">
+            <div id="sidebar" class="sidebar col-md-3">
+              <!-- <img id="avatar" src="https://avatars.githubusercontent.com/u/671702" class="img-thumbnail"> -->
+              <img id="avatar" src="https://s3.amazonaws.com/krisbarrett/avatar2.jpg" class="img-thumbnail">
+              <h1>Kris Barrett<br/><small>Computer Engineer</small></h1>
+              <div id="social">
+                <a href="https://www.twitter.com/krisbarrett1" target="_blank"><i class="fa fa-twitter-square text-primary"></i></a>
+                <a href="http://www.linkedin.com/in/krismbarrett/" target="_blank"><i class="fa fa-linkedin-square text-primary"></i></a>
+                <a href="https://www.github.com/krisbarrett" target="_blank"><i class="fa fa-github-square text-primary"></i></a>
+                <a href="mailto: krisbarrett@gmail.com" target="_blank"><i class="fa fa-envelope text-primary"></i></a>
               </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/krisbarrett/">github.com/krisbarrett</a><br />
-                  <a href="http://twitter.com/krisbarrett1/">twitter.com/krisbarrett1</a><br />
-                </p>
+              <div id="nav">
+                <ul class="nav nav-pills nav-stacked">
+                  <li id="home"><a href="/">Home</a></li>
+                  <li id="blog"><a href="/blog.html">Blog</a></li>
+                  <li id="projects"><a href="/projects.html">Projects</a></li>
+                </ul>
               </div>
             </div>
+          <div id="main" class="col-md-8">
+            {{content}}
           </div>
-        </div> <!-- /container -->
-
+        </div>
+        <div class="row">
+          <div id="footer">
+            <br/>
+          </div>
+        </div>
+      </div>
+      </div>
     </body>
 </html>
