@@ -1,0 +1,32 @@
+---
+layout: default
+title: My Blog
+---
+
+<!-- This loops through the paginated posts -->
+<h2>Blog</h2>
+{% for post in paginator.posts %}
+  <div class="post">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p class="pull-right text-muted"><i class="fa fa-comment"></i>&nbsp;<a href="{{ post.url }}#disqus_thread"></a></p>
+    <p class="text-muted">{{post.date | date_to_string}}</p>
+  </div>
+{% endfor %}
+
+<!-- Pagination links -->
+<ul class="pager">
+  {% if paginator.next_page %}
+    <li class="previous"><a href="/blog/page{{ paginator.next_page }}">&larr; Older</a></li>
+  {% else %}
+    <li class="previous disabled"><a href="#">&larr; Older</a></li>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <li class="next"><a href="/blog">&rarr; Newer</a></li>
+    {% else %}
+      <li class="next"><a href="/blog/page{{ paginator.previous_page }}">Newer &rarr; </a></li>
+    {% endif %}
+  {% else %}
+    <li class="next disabled"><a href="#">Newer &rarr;</a></li>
+  {% endif %}
+</ul>
