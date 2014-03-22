@@ -5,7 +5,7 @@ $( document ).ready(function() {
 	{
 		$('li#home').addClass("active");
 	}
-	else if(path == "/blog.html")
+	else if(path.match(/\/blog\//))
 	{
 		$('li#blog').addClass("active");
 	}
