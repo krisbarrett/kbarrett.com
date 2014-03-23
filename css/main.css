@@ -38,3 +38,9 @@ div.post:last-child
 div#main {
   padding-top: 1em;
 }
+pre {
+  border: none;
+}
+div#post {
+  margin-bottom: 2em;
+}
