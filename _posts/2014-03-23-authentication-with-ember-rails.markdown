@@ -4,7 +4,7 @@ title:  "Authentication with Ember-Rails "
 date:   2014-03-24 18:58:00
 categories: ['blog']
 ---
-Most web applications require some form of user authentication.  If you have ever developed a Ruby on Rails (RoR) application, it is likely that you have used an authentication gem such as Devise to handle user authentication.  However, with the growing popularity of client-side MVC frameworks such as Ember.js, how do you leverage these gems in your application?  This blog post will walk through setting up an ember-rails application using Devise for authentication.
+Most web applications require some form of user authentication.  If you have ever developed a Ruby on Rails (RoR) application, it is likely that you have used an authentication gem such as Devise to handle user authentication.  However, with the growing popularity of client-side MVC frameworks such as Ember.js, how do you leverage these gems in your application?  This blog post will walk through setting up an ember-rails application using Devise for authentication.  You can find the code for this tutorial [here](https://github.com/krisbarrett/ember-rails-auth-example).
 
 ### Setup Devise 
 First, generate a new Rails application:
