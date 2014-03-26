@@ -2,7 +2,7 @@
 layout: post
 title:  "Rails Parent/Child Relationship"
 date:   2013-05-28 13:19:00
-categories: 
+categories: ['blog']
 ---
 I recently added product categories to my website.  I wanted to create a few top-level categories with some more specific sub-categories.  I decided that a parent/child relationship would be suitable for this.  First, I had to add a foreign key to the model for parent_id.  I added a belongs_to relationship called parent and a has_many relationship called children as shown below.
 

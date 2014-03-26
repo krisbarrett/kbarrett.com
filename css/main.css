@@ -38,8 +38,8 @@ div.post:last-child
 div#main {
   padding-top: 1em;
 }
-pre {
-  border: none;
+div.highlight {
+  border-radius: 4px;
 }
 div#post {
   margin-bottom: 2em;

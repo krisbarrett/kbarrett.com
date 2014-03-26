@@ -2,7 +2,7 @@
 layout: post
 title:  "Dynamic Linking"
 date:   2013-07-01 15:22:00
-categories: 
+categories: ['blog']
 ---
 I feel like I have to re-learn dynamic linking in C about once a year, so I am documenting it here.  The comments in the Makefile describe the process.
 
