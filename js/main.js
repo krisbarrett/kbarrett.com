@@ -13,6 +13,10 @@ $( document ).ready(function() {
 	{
 		$('li#projects').addClass("active");
 	}
+   else if(path == "/hire-me.html")
+   {
+      $('li#hire-me').addClass("active");
+   }
 
    // set sidebar class depending on width
    var resizeEvent = function() {
